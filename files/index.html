@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <title>COW Portefølje</title>
+
+    <meta
+      name="description"
+      content="Portefølje for Charlotte Wollan, IT-student og UX/UI-designer. Se prosjekter og CV."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+  href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Quicksand:wght@400;500;600;700&family=WindSong:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+  
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- NAVIGASJON -->
+    <header>
+      <nav class="site-nav" aria-label="Hovednavigasjon">
+        <a class="logo" href="index.html">CHARLOTTE WOLLAN</a>
+
+        <ul>
+          <li>
+            <a href="index.html" class="active">Hjem</a>
+          </li>
+
+          <li>
+            <a href="#prosjekter">Prosjekter</a>
+          </li>
+
+          <li>
+            <a href="cv.html">CV</a>
+          </li>
+
+          <!-- Bytt ut e-postadressen med din faktiske adresse -->
+          <li>
+            <a href="Charlottewollan@hotmail.com">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HOVEDINNHOLD -->
+    <main class="board-wrap">
+      <div class="board">
+        <!--
+        =====================================================
+        VENSTRE: LOOKBOOK-BILDE
+        =====================================================
+        -->
+
+        <section
+          class="lookbook-frame"
+          aria-label="Portrett av Charlotte Wollan"
+        >
+          <img
+            src="images/fullPhoto.png"
+            alt="Charlotte Wollan iført sort antrekk og solbriller"
+          />
+        </section>
+
+        <!--
+        =====================================================
+        MIDTEN: ABOUT ME-KORT
+        =====================================================
+        -->
+
+        <section class="middle-col" id="om-meg" aria-labelledby="about-title">
+          <!--
+            Bytt href til riktig side dersom du har en egen about.html-side.
+            Hvis kortet ikke skal være klikkbart, kan du bytte <a> med <div>.
+          -->
+          <a
+            class="about-folder"
+            href="cv.html"
+            aria-label="Les mer om Charlotte Wollan"
+          >
+            <!--
+              Dette bildet fungerer som bakgrunnen til hele About Me-kortet.
+            -->
+            <img
+              src="images/COWfolder1.png"
+              alt=""
+              class="about-folder-bg"
+              aria-hidden="true"
+            />
+
+            <div class="about-folder-content">
+              <!--
+                POLAROID
+
+                Bytt src dersom portrettbildet har et annet filnavn.
+              -->
+              <div class="polaroid">
+                <img
+                  src="images/portrettPhoto.jpg"
+                  alt="Portrett av Charlotte Wollan"
+                />
+              </div>
+
+              <!-- TEKST PÅ ABOUT ME-KORTET -->
+              <div class="about-text">
+                <!-- <h1 id="about-title">CV</h1> -->
+                <p class="quicksand-text">
+                  <span class="highlight">Hei! Jeg er Charlotte, en IT-student på <br> siste året i bachlour i informasjonsteknologi <br> og interaktivt design.
+                  Har 10+ års erfaring i retail i forksjelige stillinger, <br> og jobber nå som selger og teknisk support i Eplehuset AS, jeg liker å kunne kombinere min erfaring fra dette til å generere gode it løsninger.
+                  Med et ekstra fokus på brukervennlighet, tilgjengelighet og ikke minst design. <br>
+                  Jeg studerer IT og jobber i skjæringspunktet mellom kode og
+                  design. Her finner du et lite utvalg prosjekter jeg har jobbet
+                  med — fra ide til konseptutvikling, brukertesting og prototyper.</span>
+                </p>
+                
+                
+              </span>
+                <p class="signature">Charlotte ♡</p>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <!--
+        =====================================================
+        HØYRE: PROSJEKTMAPPER   ♡♡♡♡♡♡♡♡
+        =====================================================
+        -->
+
+        <aside
+          class="folder-stack"
+          id="prosjekter"
+          aria-label="Mine prosjekter"
+        >
+          <!-- PROSJEKT 1 -->
+          <a
+            class="folder folder-image"
+            href="prosjekt-eventapp.html"
+            aria-label="Åpne prosjektet Event App"
+            data-folder
+          >
+            <img
+              src="images/folderB.png"
+              alt="Mappe for prosjektet Event App"
+              class="folder-img"
+            />
+
+            <span class="folder-overlay">
+              <span class="folder-index">01</span>
+              <span class="folder-label">Event App</span>
+            </span>
+          </a>
+
+          <!-- PROSJEKT 2 -->
+          <a
+            class="folder folder-image"
+            href="prosjekt-hotell.html"
+            aria-label="Åpne prosjektet AI i Hotell"
+            data-folder
+          >
+            <img
+              src="images/folderB.png"
+              alt="Mappe for prosjektet AI i Hotell"
+              class="folder-img"
+            />
+
+            <span class="folder-overlay">
+              <span class="folder-index">02</span>
+              <span class="folder-label">AI i Hotell</span>
+            </span>
+          </a>
+
+          <!-- PROSJEKT 3 -->
+          <a
+            class="folder folder-image"
+            href="prosjekt-brukertesting.html"
+            aria-label="Åpne prosjektet Brukertesting og analyse"
+            data-folder
+          >
+            <img
+              src="images/folderB.png"
+              alt="Mappe for prosjektet Brukertesting og analyse"
+              class="folder-img"
+            />
+
+            <span class="folder-overlay">
+              <span class="folder-index">03</span>
+              <span class="folder-label"> Brukertesting &amp; analyse </span>
+            </span>
+          </a>
+        </aside>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>
+        © <span id="year"></span> Charlotte Wollan — laget for hånd, bygget med
+        kode.
+      </span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

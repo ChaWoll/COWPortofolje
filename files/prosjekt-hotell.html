@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI i Hotell — [Ditt Navn]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute">
+      <filter id="wobble">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.012 0.045"
+          numOctaves="2"
+          seed="7"
+          result="noise"
+        />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+      </filter>
+    </svg>
+    <div class="grain"></div>
+
+    <nav class="site-nav">
+      <span class="logo">CHARLOTTE WOLLAN</span>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="index.html#prosjekter">Prosjekter</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="mailto:din@epost.no">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <header class="page-hero">
+      <p class="kicker">Prosjekt 02 · Konsept &amp; interaksjonsdesign</p>
+      <h1>AI i Hotell</h1>
+      <p class="tagline">
+        Omina — Intelligent Hospitality Systems To AI-prototyper som repetative
+        oppgaver i hotellresepsjonen, uten å fjerne mennesket fra
+        gjesteopplevelsen. Basert på intervjuer med fire Oslo-hoteller bygde jeg
+        en løsning som automatisk ruter innkommende e-poster til riktig
+        avdeling, og en FAQ-agent som svarer gjester direkte på nettsiden. Under
+        kan du lese om innsikten bak, prosessen, og se prototypene i bruk.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Konseptutvikling</span>
+        <span class="tag">Løsning</span>
+        <span class="tag">KI/AI</span>
+        <span class="tag">Teamleder</span>
+      </div>
+    </header>
+
+    <section class="content-section">
+      <h2>Problemet</h2>
+      <p>
+        Hotellbransjen kombinerer mange repeterende arbeidsoppgaver med et
+        sterkt behov for personlig service. <br />
+        Resepsjonen fungerer ofte som knutepunkt for hele hotellet og må
+        samtidig håndtere gjester ansikt til ansikt, telefoner, interne
+        forespørsler og store mengder e-post. Mange av henvendelsene må leses,
+        tolkes og videresendes manuelt til riktig avdeling. <br />
+        Dette skaper unødvendig arbeid og kan føre til at viktige saker blir
+        forsinket eller feilprioritert. <br />
+        Samtidig var det tydelig gjennom intervjuene at hotellene ikke ønsket
+        løsninger som erstatter menneskelig kundekontakt. Personlig service,
+        fleksibilitet og menneskelig vurdering er fortsatt en viktig del av
+        gjesteopplevelsen. <br />
+        <br />
+        Problemstillingen vår ble derfor: Hvordan kan hoteller bruke AI til å
+        effektivisere interne prosesser og frigjøre tid for ansatte, uten at det
+        går på bekostning av kundeopplevelsen? <br />
+        Vi valgte å fokusere på resepsjonen fordi dette var avdelingen der mange
+        av de daglige henvendelsene samles, og der effektivisering kan frigjøre
+        tid til mer verdifulle oppgaver: å møte gjester, løse komplekse
+        situasjoner og skape en god hotellopplevelse.
+      </p>
+      <img
+        src="images/Logo.png"
+        alt="Skisse av FAQ agent på HOBO hotel´s nettside"
+      />
+    </section>
+
+    <section class="content-section">
+      <h2>Prosessen</h2>
+      <p>
+        Prosjektet startet med research på hvordan hotellbransjen bruker
+        digitalisering og AI i dag. Vi undersøkte blant annet hvordan teknologi
+        allerede brukes til dynamisk prising, bemanningsplanlegging, analyse av
+        kundeanmeldelser og reduksjon av matsvinn. <br />
+        For å forstå behovene i praksis utviklet vi en semistrukturert
+        intervjuguide med fem hovedtemaer:
+      </p>
+      <li>Digital modenhet</li>
+      <li>Dagens arbeidsflyt og smertepunkter</li>
+      <li>Eksisterende bruk av AI og teknologi</li>
+      <li>Behov og muligheter for automatisering</li>
+      <li>Barrierer, bekymringer og endringsvilje</li>
+      <p>
+        Vi kontaktet rundt 20 hoteller gjennom telefon og e-post, og
+        gjennomførte til slutt fire intervjuer. <br />
+        Vi snakket med hotellsjefer ved Bondeheimen og Hotel Bristol, samt
+        resepsjonssjefer ved Hobo Hotel og Radisson Blu Plaza Hotel. Tre av
+        intervjuene ble gjennomført fysisk, mens ett ble gjennomført digitalt
+        via Teams. <br />
+        Etter intervjuene gikk vi systematisk gjennom materialet og
+        identifiserte mønstre på tvers av hotellene. Vi fant ut at AI allerede
+        brukes mye i interne prosesser, men at hotellene var mer forsiktige med
+        AI´ er som kommuniserer direkte med gjestene. <br />
+        Dette skyldtes særlig ønsket om å bevare en personlig og tillitsfull
+        service. <br />
+        På bakgrunn av innsikten utviklet gruppen flere mulige løsningsforslag.
+        <br />
+        <br />
+        Jeg jobbet med AI-konsepter og prototyping, og videreutviklet to
+        løsninger: et system for e-post-ruting og en FAQ-agent for hotellets
+        nettside. <br />
+        I utviklingen av e-postprototypen testet jeg også ulike måter å
+        instruere AI-en på. Jeg sammenlignet instruksjoner skrevet i naturlig
+        språk VS en mer strukturert pseudokode-tilnærming. <br />
+        Testingen viste at pseudokode ga mer konsistente og forutsigbare
+        resultater, noe som er viktig når løsningen skal brukes i en operativ
+        arbeidshverdag.
+      </p>
+      <div class="two-col">
+        <img
+          src="images/FAQAgent.png"
+          alt="Skisse av FAQ agent på HOBO hotel´s nettside"
+        />
+
+        <img
+          src="images/ReRoutingSkisse.png"
+          alt="Skiise av Epost re routing systemet i mail inbox"
+        />
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Løsningen</h2>
+      <h4>FAQ-agent:</h4>
+      <p>
+        FAQ-agenten skal redusere mengden repetitive spørsmål som når
+        resepsjonen, samtidig som gjesten får svar uten å måtte vente på en
+        ansatt. <br />
+        Dersom spørsmålet er uklart, sensitivt eller for komplekst, skal
+        samtalen kunne overføres til en medarbeider. På denne måten kan hotellet
+        kombinere rask selvbetjening med menneskelig oppfølging. <br />
+        Agenten håndterer det enkle, mens de ansatte fortsatt har ansvar for
+        situasjoner som krever empati, skjønn eller personlig kommunikasjon.
+      </p>
+      <video
+        src="images/FAQprototypeMov.mov"
+        controls
+        preload="metadata"
+        playsinline
+        poster="images/FAQAgent.png"
+      ></video>
+      <br />
+      <br />
+      <h4>E-post-ruting:</h4>
+      <p>
+        Den første prototypen er et system som analyserer innkommende e-post og
+        hjelper resepsjonen med å strukturere og videresende henvendelsen. Når
+        en e-post kommer inn, identifiserer løsningen blant annet:
+      </p>
+      <li>Bookingreferanse</li>
+      <li>Navn på gjest</li>
+      <li>Dato for opphold</li>
+      <li>Prioriteringsgrad</li>
+      <li>Relevant avdeling (f.eks. rengjøring, restaurant, resepsjon)</li>
+      <li>Tema for henvendelse</li>
+      <li>Begrunnelse for prioritering og fordeling</li>
+
+      <p>
+        Systemet kan også se når en henvendelse gjelder flere avdelinger.<br />
+        En e-post kan for eksempel inneholde spørsmål om tidlig innsjekk,
+        restaurantreservasjon, allergier og kjæledyr samtidig. I stedet for at
+        resepsjonisten må tolke og videresende alt manuelt, får de et
+        strukturert overblikk over hva saken gjelder og hvem som bør følge den
+        opp. <br />
+        Prototypen viser også hvorfor AI-en har valgt en bestemt prioritering
+        eller avdeling. <br />
+        Dette gjør løsningen mer transparent og gir den ansatte mulighet til å
+        kvalitetssikre eller overstyre forslaget. AI-en fungerer derfor som et
+        beslutningsstøtteverktøy, ikke som en endelig beslutningstaker.
+        <br />Målet er å gjøre informasjonsflyten raskere mellom avdelingene og
+        frigjøre tid i resepsjonen. <br />
+        Når riktige personer får relevant informasjon tidligere, kan saken
+        behandles raskere, samtidig som resepsjonen får mer kapasitet til
+        gjester og henvendelser som krever menneskelig vurdering.
+      </p>
+
+      <img src="images/EpostPrototype.png" alt="Film av FAQ prototype" />
+    </section>
+
+    <section class="content-section">
+      <h2>Resultat &amp; læring</h2>
+      <p>
+        Resultatet ble to konsepter som viser hvordan AI kan støtte resepsjonen
+        på ulike nivåer. <br />
+        E-postløsningen effektiviserer den interne arbeidsflyten, mens
+        FAQ-agenten hjelper gjesten direkte med enkle spørsmål.<br />
+        Begge løsningene er avgrenset til konkrete og repetitive oppgaver, slik
+        at ansatte fortsatt kan ha kontroll over komplekse saker og personlig
+        gjestekommunikasjon. Prosjektet har gitt meg en mer realistisk
+        forståelse av AI i arbeidslivet. <br />
+        Jeg lærte at den største verdien ikke nødvendigvis ligger i å
+        automatisere mest mulig, men i å finne de riktige oppgavene å
+        automatisere. AI fungerer best når den løser et konkret problem, gir
+        tydelig verdi og samtidig lar mennesker beholde kontrollen. <br />
+        Jeg lærte også hvor viktig kvalitetssikring er. <br />
+        Selv når AI-genererte svar virker overbevisende, må informasjonen
+        kontrolleres før den brukes i praksis. Arbeidet med e-postprototypen
+        viste spesielt hvor mye resultatet påvirkes av hvordan AI-en instrueres.
+        <br />
+        Strukturerte instrukser og tydelige rammer ga mer stabile resultater enn
+        åpne formuleringer.<br />
+        Som teamleder fikk jeg i tillegg erfaring med planlegging, fordeling av
+        ansvar og samarbeid. Jeg tok tidlig mye ansvar for å sikre fremdrift,
+        men erfarte at dette også kunne begrense andres eierskap. <br />
+        I ettertid ville jeg vært tydeligere på forventninger og delegert mer
+        fra starten. Denne erfaringen har gjort meg mer bevisst på at god
+        prosjektledelse handler om å skape struktur og tillit, ikke om å gjøre
+        mest mulig selv.
+      </p>
+    </section>
+
+    <a class="back-link" href="index.html">← Tilbake til forsiden</a>
+
+    <footer>
+      <span>© <span id="year"></span> Charlotte Wollan</span>
+      <span>Oslo, Norge</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

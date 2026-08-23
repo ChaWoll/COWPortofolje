@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event App — COW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute">
+      <filter id="wobble">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.012 0.045"
+          numOctaves="2"
+          seed="7"
+          result="noise"
+        />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+      </filter>
+    </svg>
+    <div class="grain"></div>
+
+    <nav class="site-nav">
+      <span class="logo">CHARLOTTE WOLLAN</span>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="index.html#prosjekter" class="active">Prosjekter</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="mailto:charlottewollan@hotmail.com">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <header class="page-hero">
+      <p class="kicker">Prosjekt 01 · UX/UI-design</p>
+      <h1>Event App</h1>
+      <p class="tagline">
+        En mobilapp som gjør det enklere å finne, melde seg på og holde oversikt
+        over arrangementer — designet fra tidlig konsept til klikkbar prototype.
+        [Erstatt med din egen kortfattede pitch for prosjektet.]
+      </p>
+      <div class="tag-row">
+        <span class="tag">Figma</span>
+        <span class="tag">Brukertesting</span>
+        <span class="tag">Mobil-first</span>
+        <span class="tag">[din rolle]</span>
+      </div>
+    </header>
+
+    <section class="content-section">
+      <h2>Problemet</h2>
+      <p>
+        I Oslo finnes det mange arrangementer, spisesteder og møteplasser, men
+        informasjonen om skeive arrangementer er ofte spredt på tvers av ulike
+        plattformer og gjemt unna i sosiale medier. For skeive studenter, og
+        spesielt skeive med annen etnisk bakgrunn som nylig har flyttet til
+        byen, gjør dette det vanskelig å finne arrangementer som passer deres
+        interesser og behov. Mange må ha et eksisterende nettverk eller kjenne
+        noen som allerede er en del av miljøet for å få med seg hva som skjer.
+        Eksisterende løsninger er enten for generelle (retter seg mot en
+        «typisk» Oslo-målgruppe) eller så nisjete at de kun dekker én type
+        arrangement eller sted. Det mangler én samlet plattform der målgruppen
+        enkelt kan finne alt på ett sted: arrangementer, spisesteder, barer og
+        muligheter for å bygge nettverk med andre som har lik bakgrunn og
+        interesser. Samtidig er trygghet og inkludering sentralt for målgruppen,
+        og dagens løsninger oppleves ofte som lite tilpasset disse behovene.
+      </p>
+      <div class="image-placeholder">
+        Skjermbilde / mockup av problemet<br />(f.eks. eksisterende løsning,
+        brukerreise)
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Prosessen</h2>
+      <p>
+        Prosjektet startet som en gruppeoppgave der vi brukte en
+        Utforske–Utforme–Utvikle-prosess med SMARTE-mål for å strukturere
+        arbeidet. I utforskingsfasen gjennomførte vi en spørreundersøkelse med 8
+        respondenter og ett dybdeintervju med en person fra målgruppen (28 år,
+        ikke-binær, skeiv, opprinnelig fra Tyskland). Undersøkelsen ga oss både
+        kvantitative og kvalitative data om hvilke typer arrangementer
+        målgruppen deltar på, hvordan de finner informasjon i dag, og hvilke
+        funksjoner de savner i en slik løsning. Basert på innsikten utviklet vi
+        papirprototyper, testet disse med brukere, og laget deretter en klikkbar
+        prototype i Figma med kjernefunksjoner som kart, arrangementsoversikt,
+        filtrering, chatrooms og forum. Vi testet prototypen med minst én bruker
+        fra målgruppen og samlet tilbakemeldinger på blant annet navigasjon,
+        fargevalg, trygghetsfunksjoner og anonymitet. Vi tok også utgangspunkt i
+        teorier om målgrupper, personas og universell utforming, og jobbet
+        bevisst med kontraster, tekststørrelser og tilgjengelighetssymboler for
+        å sikre at løsningen fungerte for flere brukergrupper. Nå videreutvikler
+        jeg prosjektet individuelt med fokus på å styrke branding, visuelt
+        uttrykk og helhetsopplevelsen. Målet er å gjøre appen mer attraktiv,
+        tydeligere i sin identitet og en løsning folk faktisk ønsker å bruke —
+        ikke bare en eksamensprototype. Jeg tar med meg all innsikt og research
+        fra den opprinnelige prosessen, men oppdaterer designet, brukerflytene
+        og interaksjonene basert på ny research, moderne designprinsipper og en
+        sterkere merkevarestrategi.
+      </p>
+      <div class="two-col">
+        <div class="image-placeholder">Wireframes / skisser</div>
+        <div class="image-placeholder">Høyoppløst UI</div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Løsningen</h2>
+      <p>
+        Den opprinnelige løsningen var en app som samler skeive arrangementer,
+        spisesteder og møteplasser på ett sted, med funksjoner som: Kart med
+        filtrering på type sted (spisesteder, barer, utesteder, arrangementer)
+        Arrangementsoversikt med mulighet til å filtrere på type, dato, pris og
+        lokasjon Chatrooms og forum der brukere kan finne andre med samme
+        interesser, bakgrunn eller hobbyer Profil og anonymitet der brukere selv
+        velger hvor mye de ønsker å vise av seg selv Trygghetsfunksjoner som
+        «safe mode» (nøytralt tema) og mulighet for å rapportere upassende
+        oppførsel I den oppdaterte versjonen beholder jeg disse
+        kjernfunksjonene, men redesigner hele opplevelsen med en tydeligere
+        visuell identitet, sterkere hierarki i informasjonen og en mer
+        gjennomtenkt onboarding. Jeg jobber spesielt med: en konsekvent
+        fargepalett og typografi som speiler mangfold, trygghet og fellesskap et
+        mer uttrykssterkt og gøyete designspråk som appellerer til målgruppen
+        forbedrede mikrointeraksjoner og tilbakemeldinger i appen (f.eks. når
+        man markerer «going», lagrer favoritter eller bytter tema) en mer
+        intuitiv navigasjon og tydeligere kall-til-handling på hver skjerm en
+        oppdatert prototype som viser hvordan den nye designretningen fungerer i
+        praksis
+      </p>
+      <div class="image-placeholder">Hovedskjermer i appen</div>
+    </section>
+
+    <section class="content-section">
+      <h2>Resultat &amp; læring</h2>
+      <p>
+        Den opprinnelige prototypen ble testet med én bruker fra målgruppen, som
+        ga verdifulle tilbakemeldinger på blant annet trygghetsfunksjoner,
+        anonymitet, fargevalg og navigasjon. Brukeren bekreftet at det finnes et
+        reelt behov for en slik løsning, og at appen må oppleves som trygg,
+        inkluderende og profesjonell for at målgruppen skal stole på den.
+        Spørreundersøkelsen viste at 7 av 8 respondenter ville brukt en app som
+        hjelper dem å finne arrangementer tilpasset deres bakgrunn og
+        interesser, og at funksjoner som «going/not going», kart og filtrering
+        ble trukket frem som spesielt nyttige. Gjennom prosjektet lærte jeg hvor
+        viktig det er å involvere målgruppen tidlig og ofte, spesielt når man
+        designer for sårbare grupper. Jeg fikk erfaring med å jobbe med
+        SMARTE-mål, personas, spørreundersøkelser, dybdeintervjuer og iterativ
+        prototyping i Figma. Samtidig lærte jeg mye om universell utforming,
+        kontraster, tilgjengelighet og hvordan man balanserer trygghet med et
+        uttrykssterkt design. Den største lærdommen var at en god idé ikke er
+        nok — designet må også oppleves som trygt, relevant og attraktivt for
+        målgruppen. Derfor valgte jeg å videreutvikle prosjektet individuelt,
+        med fokus på å gjøre appen til noe folk faktisk vil bruke, ikke bare en
+        løsning som teknisk sett fungerer. Gjennom denne prosessen har jeg
+        utviklet ferdigheter innen branding, visuell kommunikasjon,
+        interaksjonsdesign og brukerorientert produktutvikling, som jeg tar med
+        meg videre i arbeid med digitale produkter.
+      </p>
+    </section>
+
+    <a class="back-link" href="index.html">← Tilbake til forsiden</a>
+
+    <footer>
+      <span>© <span id="year"></span> [Ditt Navn]</span>
+      <span>Oslo, Norge</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
